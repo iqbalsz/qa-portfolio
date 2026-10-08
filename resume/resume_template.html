@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>M. Arif Iqbal Hidayatullah - Resume</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 12mm 15mm 12mm 15mm;
+    }
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: #1f2937;
+      background: #ffffff;
+      line-height: 1.38;
+      font-size: 9.5pt;
+    }
+    a {
+      color: #1f2937;
+      text-decoration: none;
+    }
+    .header {
+      border-bottom: 2px solid #9333ea;
+      padding-bottom: 7px;
+      margin-bottom: 11px;
+    }
+    .name {
+      font-size: 19pt;
+      font-weight: 800;
+      color: #111827;
+      letter-spacing: -0.5px;
+      line-height: 1.1;
+    }
+    .role {
+      font-size: 11pt;
+      font-weight: 600;
+      color: #9333ea;
+      margin-top: 2px;
+      margin-bottom: 5px;
+    }
+    .contact-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-size: 8.5pt;
+      color: #4b5563;
+    }
+    .contact-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 3px;
+    }
+    .section {
+      margin-bottom: 11px;
+    }
+    .section-title {
+      font-size: 10.5pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: #111827;
+      border-bottom: 1px solid #e5e7eb;
+      padding-bottom: 2px;
+      margin-bottom: 6px;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+    .summary-text {
+      color: #374151;
+      font-size: 9.2pt;
+      line-height: 1.4;
+      text-align: justify;
+    }
+    .job {
+      margin-bottom: 9px;
+    }
+    .job:last-child {
+      margin-bottom: 0;
+    }
+    .job-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 1px;
+    }
+    .job-title {
+      font-size: 10pt;
+      font-weight: 700;
+      color: #111827;
+    }
+    .job-company {
+      font-weight: 600;
+      color: #9333ea;
+    }
+    .job-meta {
+      font-size: 8.5pt;
+      color: #6b7280;
+      font-weight: 500;
+      text-align: right;
+    }
+    .tech-stack {
+      font-size: 8.5pt;
+      color: #4b5563;
+      margin-bottom: 3px;
+      font-weight: 500;
+    }
+    .tech-stack strong {
+      color: #1f2937;
+    }
+    .bullets {
+      list-style-type: disc;
+      padding-left: 15px;
+      color: #374151;
+      font-size: 9pt;
+      line-height: 1.38;
+    }
+    .bullets li {
+      margin-bottom: 2px;
+    }
+    .bullets strong {
+      color: #111827;
+    }
+    .skills-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 9pt;
+    }
+    .skills-table td {
+      padding: 2px 0;
+      vertical-align: top;
+    }
+    .skills-label {
+      width: 24%;
+      font-weight: 700;
+      color: #111827;
+    }
+    .skills-val {
+      width: 76%;
+      color: #374151;
+    }
+    .edu-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+    .edu-school {
+      font-size: 9.8pt;
+      font-weight: 700;
+      color: #111827;
+    }
+    .edu-degree {
+      font-size: 9pt;
+      color: #4b5563;
+    }
+    .edu-date {
+      font-size: 8.5pt;
+      color: #6b7280;
+      font-weight: 500;
+    }
+    .certs-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px 14px;
+      font-size: 8.8pt;
+      color: #374151;
+    }
+    .cert-pill {
+      position: relative;
+      padding-left: 10px;
+    }
+    .cert-pill::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: #9333ea;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <h1 class="name">M. Arif Iqbal Hidayatullah</h1>
+    <div class="role">Software Quality Assurance &amp; Test Automation Engineer</div>
+    <div class="contact-row">
+      <span class="contact-item">📧 iqbalsfsz@gmail.com</span>
+      <span class="contact-item">🔗 linkedin.com/in/iqbaalmuhmd</span>
+      <span class="contact-item">💻 github.com/iqbalsz</span>
+      <span class="contact-item">📍 Jakarta, Indonesia</span>
+    </div>
+  </header>
+
+  <!-- SUMMARY -->
+  <section class="section">
+    <div class="section-title">Professional Summary</div>
+    <p class="summary-text">
+      Software Quality Assurance and Test Automation Engineer with a Computer Science degree and proven experience safeguarding mission-critical fintech and enterprise platforms (Flip, PT Astra International Tbk). Core expertise in shifting quality left, architecting resilient web/mobile E2E automation frameworks (TypeScript, Playwright, Appium), executing rigorous REST API validation (Postman), and verifying backend data landing integrity across SQL, SAP, and Cloudera environments.
+    </p>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section">
+    <div class="section-title">Technical Expertise</div>
+    <table class="skills-table">
+      <tr>
+        <td class="skills-label">Test Automation:</td>
+        <td class="skills-val">Playwright, TypeScript, Appium (iOS &amp; Android), Cypress, Katalon Studio</td>
+      </tr>
+      <tr>
+        <td class="skills-label">API &amp; Backend:</td>
+        <td class="skills-val">Postman, REST APIs, JSON Schema validation, SQL, SAP, Cloudera Data Landing</td>
+      </tr>
+      <tr>
+        <td class="skills-label">Methodologies &amp; Tools:</td>
+        <td class="skills-val">CI/CD Pipeline Stabilization, Agile / Scrum, Jira, Git, GitLab, Test Matrix / Plans, UAT</td>
+      </tr>
+      <tr>
+        <td class="skills-label">Languages &amp; Web:</td>
+        <td class="skills-val">TypeScript, JavaScript, Python basics, HTML5, CSS3, React fundamentals</td>
+      </tr>
+    </table>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section">
+    <div class="section-title">Work Experience</div>
+
+    <!-- Flip -->
+    <div class="job">
+      <div class="job-header">
+        <div>
+          <span class="job-title">Test Engineer</span> — <span class="job-company">Flip</span>
+        </div>
+        <div class="job-meta">March 2026 – Present | South Jakarta</div>
+      </div>
+      <div class="tech-stack"><strong>Tech:</strong> TypeScript, Playwright, Appium, Postman, CI/CD, Slack</div>
+      <ul class="bullets">
+        <li>Architected scalable automated E2E test suites with <strong>Playwright &amp; TypeScript</strong>, increasing total test coverage from 60% to <strong>80%</strong>.</li>
+        <li>Boosted automated regression test pass rates from 40% to <strong>80%</strong>, significantly stabilizing CI/CD release cycles and drastically minimizing flaky tests.</li>
+        <li>Engineered cross-platform mobile automation scripts using <strong>Appium</strong> to validate critical transaction user journeys across Android and iOS builds.</li>
+        <li>Conducted contract and integration testing for core microservice REST APIs via <strong>Postman</strong>, verifying schemas and payload responses.</li>
+      </ul>
+    </div>
+
+    <!-- Astra -->
+    <div class="job">
+      <div class="job-header">
+        <div>
+          <span class="job-title">Software Quality Assurance</span> — <span class="job-company">PT Astra International Tbk</span>
+        </div>
+        <div class="job-meta">Dec 2023 – Dec 2024 | North Jakarta</div>
+      </div>
+      <div class="tech-stack"><strong>Tech:</strong> SQL, SAP, Cloudera Databases, Jira, Test Management, UAT</div>
+      <ul class="bullets">
+        <li>Authored detailed Test Cases, Test Plans, and comprehensive test documentation managed via Jira across release sprints.</li>
+        <li>Validated enterprise-scale data landing pipelines across <strong>SQL, SAP, and Cloudera</strong> database environments to safeguard data integrity.</li>
+        <li>Led User Acceptance Testing (UAT) sessions alongside product owners and produced structured user operation manuals for released systems.</li>
+      </ul>
+    </div>
+
+    <!-- Coding.ID & Elgatama -->
+    <div class="job">
+      <div class="job-header">
+        <div>
+          <span class="job-title">QA Automation Trainee &amp; Freelance Developer</span> — <span class="job-company">Coding.ID / Freelance</span>
+        </div>
+        <div class="job-meta">2022 – 2023 | Indonesia</div>
+      </div>
+      <ul class="bullets">
+        <li>Completed intensive QA Engineering bootcamp specializing in automation across Web, Mobile, and API testing using Katalon Studio and Cypress.</li>
+        <li>Delivered client corporate web solutions (Elgatama) utilizing semantic HTML, CSS, and modern responsive JavaScript.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="section">
+    <div class="section-title">Education</div>
+    <div class="edu-row">
+      <div>
+        <div class="edu-school">Universitas Sriwijaya</div>
+        <div class="edu-degree">Bachelor of Computer Science (S1, Teknik Informatika)</div>
+      </div>
+      <div class="edu-date">2015 – 2020</div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section class="section" style="margin-bottom: 0;">
+    <div class="section-title">Certifications &amp; Courses</div>
+    <div class="certs-row">
+      <span class="cert-pill">Quality Assurance Professional Certification</span>
+      <span class="cert-pill">HTML, CSS, and Javascript for Web Developers</span>
+      <span class="cert-pill">Foundations of User Experience (UX) Design</span>
+      <span class="cert-pill">Coding.ID QA Automation Trainee</span>
+    </div>
+  </section>
+
+</body>
+</html>

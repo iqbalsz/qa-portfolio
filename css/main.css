@@ -1,0 +1,247 @@
+:root {
+  --primary-color: #DB00FF;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: "Poppins";
+  background: #f2f2f2;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  padding: 1em;
+  background: white;
+}
+.navbar .logo {
+  font-weight: bold;
+  color: black;
+  font-size: 1.2em;
+}
+.navbar .logo span {
+  color: var(--primary-color);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5em;
+}
+header nav {
+  float: right;
+}
+header nav ul {
+  display: flex;
+}
+header nav ul a {
+  display: block;
+  padding: 0 1em;
+}
+header nav ul a:hover {
+  font-weight: bold;
+}
+
+a {
+  color: #6c6c6c;
+}
+
+section {
+  padding: 5em 2em;
+}
+
+.hero {
+  text-align: center;
+}
+
+.content .title, .content-ab .title {
+  font-size: 2.5em;
+  line-height: 1.3em;
+  margin-top: 3em;
+  font-size: 36px;
+  color: black;
+  margin-bottom: 0.2em;
+}
+.content p, .content-ab p {
+  font-size: 24px;
+  color: #6c6c6c;
+  line-height: 0.5em;
+}
+.content span, .content-ab span {
+  color: var(--primary-color);
+}
+.content .about-cta, .content-ab .about-cta {
+  margin-top: 2.5em;
+}
+.content .primary-cta, .content-ab .primary-cta {
+  color: var(--primary-color);
+  background: white;
+  border: 1px solid var(--primary-color);
+  font-size: 18px;
+  padding: 0.4em 1.3em;
+  border-radius: 5em;
+}
+.content .primary-cta:hover, .content-ab .primary-cta:hover {
+  background: var(--primary-color);
+  color: white;
+}
+.content .left-col-ab, .content-ab .left-col-ab {
+  margin-top: 2em;
+}
+
+#projects {
+  font-family: "Poppins";
+  position: relative;
+  text-align: center;
+}
+#projects .article-container {
+  margin-top: 2em;
+}
+#projects .experience-details-container {
+  display: flex;
+  flex-direction: column;
+}
+#projects .project-img {
+  border-radius: 2rem;
+  width: 90%;
+  height: 90%;
+}
+#projects .title {
+  font-size: 2.5em;
+  line-height: 4.3em;
+  margin-top: 3em;
+  font-size: 36px;
+  color: black;
+  margin-bottom: 1.2em;
+}
+
+.project-cta {
+  color: var(--primary-color);
+  background: white;
+  border: 1px solid var(--primary-color);
+  font-size: 18px;
+  padding: 0.4em 1.3em;
+  border-radius: 5em;
+}
+.project-cta:hover {
+  background: var(--primary-color);
+  color: white;
+}
+
+.featured-work {
+  display: block;
+  padding: 1em;
+  margin-top: 9em;
+  border-radius: 1em;
+  margin-bottom: 2em;
+}
+.featured-work .work-container {
+  display: grid;
+  margin: 0;
+  grid-template-columns: repeat(auto-fit, minmax(19rm, 1fr));
+  position: relative;
+  place-content: center;
+}
+.featured-work .img-project {
+  width: 400px;
+  padding: 0.5em;
+}
+.featured-work .img-project:hover {
+  opacity: 0.5;
+  transition: 0.5s ease;
+}
+.featured-work .img-project:hover + .hide {
+  display: block;
+}
+.featured-work .hide {
+  display: none;
+  position: relative;
+  z-index: 11;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.right-col-ab {
+  padding: 0 4em;
+}
+.right-col-ab .title {
+  text-align: left;
+}
+.right-col-ab .desc {
+  font-size: 18px;
+  line-height: 1.4em;
+  text-align: left;
+}
+.right-col-ab .contact-me {
+  display: flex;
+  justify-content: space-between;
+}
+.right-col-ab .contact-me p {
+  color: black;
+  text-align: left;
+  padding: 0 inherit;
+}
+.right-col-ab .contact-me .desc {
+  margin-top: -0.5em;
+  text-align: left;
+  padding: 0 inherit;
+}
+.right-col-ab .contact-me ul {
+  display: flex;
+}
+
+.footer {
+  text-align: center;
+  margin-bottom: 3em;
+  padding-bottom: 3em;
+  font-size: 24px;
+}
+.footer a {
+  color: var(--primary-color);
+}
+
+@media only screen and (min-width: 1000px) {
+  header {
+    margin: auto 12em;
+  }
+  .work-container {
+    display: grid;
+    place-content: space-between;
+  }
+  .work-container ul {
+    display: flex;
+  }
+  .work-container ul .img-project {
+    padding: 1em;
+  }
+  .right-col-ab {
+    padding: 0 11em;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .content-ab {
+    display: flex;
+    justify-content: space-between;
+  }
+  .content-ab .left-col-ab {
+    margin-top: 5em;
+    padding: 0 0 0 3em;
+  }
+  .content-ab .right-col-ab {
+    margin-top: 1em;
+    padding: 0 8em 0 4em;
+  }
+  #projects .experience-details-container {
+    flex-direction: row;
+  }
+}/*# sourceMappingURL=main.css.map */

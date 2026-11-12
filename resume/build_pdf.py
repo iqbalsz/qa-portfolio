@@ -115,7 +115,7 @@ def generate_pdf(output_path):
     story.append(Paragraph("Software Quality Assurance &amp; Test Automation Engineer", role_style))
     story.append(Spacer(1, 3))
     
-    contact_line = "Email: <b>iqbalsfsz@gmail.com</b> &nbsp;|&nbsp; LinkedIn: <b>linkedin.com/in/iqbaalmuhmd</b> &nbsp;|&nbsp; GitHub: <b>github.com/iqbalsz</b> &nbsp;|&nbsp; Jakarta, Indonesia"
+    contact_line = "+62 851-5885-1926 &nbsp;|&nbsp; iqbalsfsz@gmail.com &nbsp;|&nbsp; linkedin.com/in/iqbaalmuhmd &nbsp;|&nbsp; github.com/iqbalsz &nbsp;|&nbsp; Jakarta, Indonesia"
     story.append(Paragraph(contact_line, contact_style))
     story.append(Spacer(1, 6))
     story.append(HRFlowable(width="100%", thickness=1.5, color=primary_color, spaceBefore=0, spaceAfter=8))
@@ -136,7 +136,7 @@ def generate_pdf(output_path):
     skills_data = [
         [
             Paragraph("<b>Test Automation:</b>", body_style),
-            Paragraph("Playwright, TypeScript, Appium (Android &amp; iOS), Cypress, Katalon Studio", body_style)
+            Paragraph("Playwright, TypeScript, Appium (Android &amp; iOS), WebdriverIO, Jest, Cypress, Katalon Studio", body_style)
         ],
         [
             Paragraph("<b>API &amp; Backend:</b>", body_style),
@@ -147,8 +147,8 @@ def generate_pdf(output_path):
             Paragraph("E2E Testing, CI/CD Pipeline Optimization, Flaky Test Reduction, Test Plans, JIRA, UAT", body_style)
         ],
         [
-            Paragraph("<b>Languages &amp; Web:</b>", body_style),
-            Paragraph("TypeScript, JavaScript, Python fundamentals, HTML5, CSS3/SCSS, React basics, Git / GitLab", body_style)
+            Paragraph("<b>Languages &amp; Tools:</b>", body_style),
+            Paragraph("TypeScript, JavaScript, Python fundamentals, HTML5, CSS3/SCSS, React basics, Git / GitLab, n8n", body_style)
         ]
     ]
     t = Table(skills_data, colWidths=[110, 430])
@@ -181,12 +181,14 @@ def generate_pdf(output_path):
         ('BOTTOMPADDING', (0,0), (-1,-1), 0),
     ]))
     story.append(t1)
-    story.append(Paragraph("Tech Stack: TypeScript, Playwright, Appium, Postman, CI/CD, Slack", tech_style))
+    story.append(Paragraph("Tech Stack: TypeScript, WebdriverIO, Appium, Playwright, Postman, n8n, Slack, Git", tech_style))
     story.append(Spacer(1, 2))
-    story.append(Paragraph("&bull; Architected scalable automated E2E test suites with <b>Playwright &amp; TypeScript</b>, increasing total automated test coverage from 60% to <b>80%</b>.", bullet_style))
-    story.append(Paragraph("&bull; Boosted regression test pass rates from 40% to <b>80%</b>, significantly stabilizing CI/CD release cycles and drastically mitigating flaky tests.", bullet_style))
-    story.append(Paragraph("&bull; Engineered cross-platform mobile automation scripts using <b>Appium</b> to validate critical transaction user journeys across Android and iOS builds.", bullet_style))
-    story.append(Paragraph("&bull; Conducted thorough API contract and integration testing via <b>Postman</b>, validating payload schemas and endpoint responses across core services.", bullet_style))
+    story.append(Paragraph("&bull; Took over as <b>PIC test engineer</b> for gold investment, insurance and Super Flip after a team restructuring, owning all testing and the biweekly regression as the team’s only test engineer.", bullet_style))
+    story.append(Paragraph("&bull; Raised the regression pass rate from 60% to <b>90%</b> and automation coverage from 60% to <b>80%</b> by stabilising flaky tests (selector fixes, async handling, retry logic) and automating more test cases.", bullet_style))
+    story.append(Paragraph("&bull; Migrated the full Appium mobile test suite to <b>Syntinel</b>, the company’s internal test platform, making biweekly regression manageable for a single engineer.", bullet_style))
+    story.append(Paragraph("&bull; Built and maintained mobile automation for critical transaction journeys using <b>WebdriverIO, Appium and TypeScript</b>.", bullet_style))
+    story.append(Paragraph("&bull; Tested REST APIs with <b>Postman and Playwright</b>, validating payloads, status codes and responses across payment, gold investment and insurance services.", bullet_style))
+    story.append(Paragraph("&bull; Built an <b>n8n workflow and Slack bot</b> that creates fully verified staging test accounts, replacing a 15-step manual process that took about 30 minutes.", bullet_style))
     story.append(Spacer(1, 6))
 
     # Job 2: Astra
@@ -205,10 +207,10 @@ def generate_pdf(output_path):
         ('BOTTOMPADDING', (0,0), (-1,-1), 0),
     ]))
     story.append(t2)
-    story.append(Paragraph("Tech Stack: SQL, SAP, Cloudera Databases, JIRA, Test Plans, UAT", tech_style))
+    story.append(Paragraph("Tech Stack: SQL, SAP, Cloudera Databases, Jest, JIRA, Test Plans, UAT", tech_style))
     story.append(Spacer(1, 2))
     story.append(Paragraph("&bull; Formulated end-to-end Test Cases and Test Plans, maintaining structured test documentation and defect tracking directly in JIRA.", bullet_style))
-    story.append(Paragraph("&bull; Validated complex data landing pipelines across <b>SQL, SAP, and Cloudera</b> database environments to safeguard enterprise data accuracy.", bullet_style))
+    story.append(Paragraph("&bull; Validated data landing pipelines across <b>SQL, SAP, and Cloudera</b> environments, writing <b>Jest</b> scripts to automate data reconciliation by comparing source and target datasets exported as CSV.", bullet_style))
     story.append(Paragraph("&bull; Led cross-functional User Acceptance Testing (UAT) sessions with business stakeholders and authored comprehensive user operation manuals.", bullet_style))
     story.append(Spacer(1, 6))
 
@@ -266,5 +268,6 @@ def generate_pdf(output_path):
     print("PDF generated successfully:", output_path)
 
 if __name__ == "__main__":
-    target = os.path.join(r"C:\Users\iqbal\.gemini\antigravity\scratch\2021Resume\resume", "CV M.Arif Iqbal_QA.pdf")
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    target = os.path.join(current_dir, "CV M.Arif Iqbal_QA.pdf")
     generate_pdf(target)

@@ -19,9 +19,10 @@ Modern, minimal personal portfolio and resume website of **M. Arif Iqbal Hidayat
 │   └── main.js                 # Theme toggler, scroll interactions, mobile menu
 ├── images/                     # Project screenshots & profile assets
 └── resume/
-    ├── CV M.Arif Iqbal_QA.pdf  # Generated single-page ATS resume
-    ├── build_pdf.py            # Python generator script for the PDF resume
-    └── resume_template.html    # Printable HTML template
+    ├── CV_MArifIqbalHidayatullah.pdf # Latest single-page ATS resume
+    ├── CV M.Arif Iqbal_QA.pdf        # Generated single-page ATS resume
+    ├── build_pdf.py                  # Python generator script for the PDF resume
+    └── resume_template.html          # Printable HTML template
 ```
 
 ---
